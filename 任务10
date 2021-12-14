@@ -1,0 +1,33 @@
+class person:
+    __name=""
+    __age=0
+    __gender=""
+
+    def setName(self,name):
+        self.__name=name
+    def getName(self):
+        return self.__name
+    def setAge(self,age):
+        self.__age=age
+    def getAge(self):
+        return self.__age
+    def setGender(self,gender):
+        self.__gender=gender
+    def getage(self):
+        return self.__gender
+
+class worker(person):
+
+    def work(self):
+        print(self.getName(),"正在干活")
+
+class student(person):
+
+    def study(self):
+        print(self.getName(),"刚学习完")
+    def sing(self):
+        print("一会儿要去唱歌")
+our = student()
+our.setName("阿飞")
+our.study()
+our.sing()
